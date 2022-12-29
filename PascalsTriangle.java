@@ -5,7 +5,11 @@ public class PascalsTriangle {
     public static void main(String[] args) {
         Solution soln = new Solution();
         int numRows = 10;
-        System.out.println(soln.generate(numRows));
+//        System.out.println(soln.generate(numRows));
+        List<List<Integer>> res = soln.generate(numRows);
+        for(int i = 0; i<numRows; i++) {
+        	System.out.println(res.get(i));
+        }
     }
 
     public static class Solution {
